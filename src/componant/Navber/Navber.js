@@ -16,15 +16,15 @@ const Navber = () => {
     return (
         <Navbar className='navber-container' collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand>
-                    <h1>QuizCentum <FontAwesomeIcon icon={faBrain}></FontAwesomeIcon></h1>
+                <Navbar.Brand className='nab-brand'>
+                    <h1>QuizCentum<FontAwesomeIcon icon={faBrain}></FontAwesomeIcon></h1>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className='ms-auto'>
                         <NavLink style={({ isActive }) =>
                             isActive ? activeStyle : undefined
-                        } to="topic">Topic</NavLink>
+                        } to="/">Topic</NavLink>
                         <NavLink style={({ isActive }) =>
                             isActive ? activeStyle : undefined
                         } to="statistics">Statistics</NavLink>

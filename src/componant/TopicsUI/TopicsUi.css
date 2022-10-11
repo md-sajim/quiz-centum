@@ -1,0 +1,10 @@
+.quiz-btn{
+    padding: 2px 20px;
+    border: 0;
+    border-radius: 8px;
+    background-color: black;
+    color: #fff;
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}

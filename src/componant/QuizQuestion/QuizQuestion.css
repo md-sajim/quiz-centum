@@ -1,20 +1,38 @@
-.navber-container a{
-    text-decoration: none;
-    color:goldenrod;
-    margin-right: 20px;
-    font-weight: 600;
-    font-size: large;
-    font-family: 'Courier New', Courier, monospace;
+.question-container {
+    border: 2px solid gray;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.253);
 }
-.nab-brand{
-    margin: 0;
+
+.option-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
 }
-.navber-container a:hover{
-    color: orange;
+
+.option {
+    border: 1px solid green;
+    border-radius: 8px;
+    padding-left: 15px;
+    display: flex;
+    justify-items: center;
+    background-color: aquamarine;
+    padding-top: 10px;
+}
+.pointer{
+    cursor: pointer;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .option-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
     
+    }
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
