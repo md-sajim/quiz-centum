@@ -1,0 +1,11 @@
+.navber-container a{
+    text-decoration: none;
+    color:goldenrod;
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navber-container a:hover{
+    color: orange;
+}
