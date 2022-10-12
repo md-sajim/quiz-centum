@@ -1,7 +1,7 @@
-# Project Name[QuizCentum]
+# Project Name QuizCentum
 ## Project [Link](https://quizcen-tum.netlify.app/).
 
-### * Futures in this sites
+ * Futures in this sites
     * Dynamic routing
     * Responsive web design
     * Dynamic Navber
@@ -10,7 +10,7 @@
     * Dynamic Tost
     * and have Quiz platform
 
-### * Use Material
+ * Use Material
     * react-fontawesome icon
     * react-bootstra Framework
     * react-router-dom
