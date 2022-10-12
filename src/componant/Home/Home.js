@@ -2,6 +2,7 @@ import { faBrain } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Topics from '../Topics/Topics';
+import './Home.css'
 
 const Home = () => {
     return (

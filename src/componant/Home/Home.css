@@ -1,0 +1,11 @@
+.header-text {
+    height: 20%;
+    text-align: center;
+    background-image: url(../../img/depositphotos_138030202-stock-photo-physics-concept-on-background.jpg);
+}
+.header-text h4{
+    font-weight: 600;
+    font-size: 30px;
+    color: blueviolet;
+}
+
