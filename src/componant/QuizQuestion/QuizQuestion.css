@@ -20,10 +20,11 @@
     display: flex;
     justify-items: center;
     background-color: aquamarine;
-    padding-top: 10px;
+    padding: 10px 0 10px 5px;
 }
 .pointer{
     cursor: pointer;
+    margin-right: 5px;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

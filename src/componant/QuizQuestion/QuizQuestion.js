@@ -3,7 +3,7 @@ import './QuizQuestion.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faSeedling } from '@fortawesome/free-solid-svg-icons';
+import { faEye } from '@fortawesome/free-solid-svg-icons';
 
 const QuizQuestion = ({ questions }) => {
     const [correct, setCorrect] = useState("")
@@ -37,7 +37,7 @@ const QuizQuestion = ({ questions }) => {
                     options.map((option,id) => {
                         return (
                             <div key={id} className='option'>
-                                <p className='text-center'><input className='pointer' onClick={()=>chackCorrectAnswer(option)} type="radio" name="" id="" /> {option}</p>
+                                <input className='pointer' onClick={()=>chackCorrectAnswer(option)} type="radio" name={questions._id} id="" /> {option}
                                 <ToastContainer />
                             </div>
                         )

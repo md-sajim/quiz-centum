@@ -1,4 +1,4 @@
-import { faBoltLightning, faBrain, faLightbulb } from '@fortawesome/free-solid-svg-icons';
+import { faBrain} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Container from 'react-bootstrap/Container';
@@ -24,7 +24,7 @@ const Navber = () => {
                     <Nav className='ms-auto'>
                         <NavLink style={({ isActive }) =>
                             isActive ? activeStyle : undefined
-                        } to="/">Topic</NavLink>
+                        } to="topic">Topic</NavLink>
                         <NavLink style={({ isActive }) =>
                             isActive ? activeStyle : undefined
                         } to="statistics">Statistics</NavLink>
