@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 
 const QuizQuestion = ({ questions }) => {
+    const [toggole, setToggol] = useState(true)
     const [correct, setCorrect] = useState("")
     const notify = () => toast("success!");
     const notify1 = () => toast("fail!");
@@ -13,7 +14,15 @@ const QuizQuestion = ({ questions }) => {
     const { question, options, correctAnswer } = questions.question;
     ;
     const heandalCorrectAnswer = ans => {
-        setCorrect(ans)
+        if(ans){
+         setCorrect(correctAnswer)
+         setToggol(false)
+
+        }
+        else{
+            setCorrect()
+            setToggol(true)
+        }
     }
     const  chackCorrectAnswer = corrAns =>{
         console.log(corrAns)
@@ -27,10 +36,10 @@ const QuizQuestion = ({ questions }) => {
     } 
     return (
         <div className='question-container'>
-            <h6>{correct}</h6>
+            <h6 className='text-danger'>{correct}</h6>
             <div className='d-flex justify-content-between my-4'>
                 <h6>Quiz {questions._id + 1}: {question}</h6>
-                <FontAwesomeIcon className='pointer' onClick={() => heandalCorrectAnswer(correctAnswer)} icon={faEye}></FontAwesomeIcon>
+                <FontAwesomeIcon className='pointer' onClick={() => heandalCorrectAnswer(toggole)} icon={faEye}></FontAwesomeIcon>
             </div>
             <div className='option-container'>
                 {
