@@ -1,0 +1,12 @@
+.quastion-container{
+    color: black;
+    padding: 40px;
+    background-image: url(../../img/depositphotos_138030202-stock-photo-physics-concept-on-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+p{
+    margin-left: 20px;
+    font-weight: 600;
+}
