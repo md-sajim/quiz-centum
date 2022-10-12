@@ -20,7 +20,7 @@ const TopicsUi = ({ singalData }) => {
                     Total quiz: {total}
                 </strong>
                 </Card.Text>
-                <Button variant="primary" onClick={() => hendlebtn(id)} className='quiz-btn'>Quiz {name} <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></Button>
+                <button onClick={() => hendlebtn(id)} className='quiz-btn'>Quiz {name} <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></button>
             </Card.Body>
         </Card>
     );

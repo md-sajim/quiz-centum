@@ -8,32 +8,32 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 const QuizQuestion = ({ questions }) => {
     const [toggole, setToggol] = useState(true)
     const [correct, setCorrect] = useState("")
-    const notify = () => toast("success!");
-    const notify1 = () => toast("fail!");
+    const notify = () => toast("right answer");
+    const notify1 = () => toast("wrong answer");
     // console.log(questions)
     const { question, options, correctAnswer } = questions.question;
     ;
     const heandalCorrectAnswer = ans => {
-        if(ans){
-         setCorrect(correctAnswer)
-         setToggol(false)
+        if (ans) {
+            setCorrect(correctAnswer)
+            setToggol(false)
 
         }
-        else{
+        else {
             setCorrect()
             setToggol(true)
         }
     }
-    const  chackCorrectAnswer = corrAns =>{
+    const chackCorrectAnswer = corrAns => {
         console.log(corrAns)
-        if(corrAns === correctAnswer){
+        if (corrAns === correctAnswer) {
             notify()
         }
-        else{
+        else {
             notify1()
         }
 
-    } 
+    }
     return (
         <div className='question-container'>
             <h6 className='text-danger'>{correct}</h6>
@@ -43,10 +43,10 @@ const QuizQuestion = ({ questions }) => {
             </div>
             <div className='option-container'>
                 {
-                    options.map((option,id) => {
+                    options.map((option, id) => {
                         return (
                             <div key={id} className='option'>
-                                <input className='pointer' onClick={()=>chackCorrectAnswer(option)} type="radio" name={questions._id} id="" /> {option}
+                                <input className='pointer' onClick={() => chackCorrectAnswer(option)} type="radio" name={questions._id} id="" /> {option}
                                 <ToastContainer />
                             </div>
                         )
