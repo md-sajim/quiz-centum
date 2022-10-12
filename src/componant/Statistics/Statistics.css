@@ -12,7 +12,7 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .piechart-container {
-        width: 100%;
+        
         margin-top: 50px;
     }
 
@@ -32,7 +32,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .piechart-container {
-        width: 100%;
+       
         margin-top: 50px;
     }
 }
@@ -40,15 +40,13 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .piechart-container {
-        width: 95%;
-        margin: 50px auto;
+       
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .piechart-container {
-        width: 95%;
-        margin: 50px auto;
+       
     }
 }
